@@ -1,0 +1,55 @@
+.outer-cover {
+    border: 1px solid;
+
+    margin: 2vw;
+}
+
+.cover-video {
+    border-right: 1px solid;
+ 
+    padding: 50px;
+
+    transform: none;
+    transition: transform 1s;
+}
+
+.cover-video:hover {
+    transform: skewY(5deg);
+}
+
+.cover-of-poem {
+    border-right: solid 1px;
+
+    transform: none;
+    transition: transform 1s;
+}
+
+.cover-of-poem:hover {
+    transform: scale(1.1);
+}
+
+.poem-header {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.main-paragraph {
+    margin: auto;
+}
+
+.paragraph-line {
+    font-size: large;
+}
+
+.cover-of-about-us {
+    padding: auto;
+    padding-top: 20vh;
+    padding-left: 8vw;
+
+    transform: none;
+    transition: transform 1s;
+}
+
+.cover-of-about-us:hover {
+    transform: skewY(-5deg);
+}
