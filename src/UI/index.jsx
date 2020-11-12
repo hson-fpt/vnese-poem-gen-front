@@ -30,13 +30,13 @@ class PoemDisplay extends React.Component {
     }
 
     renderRandomText() {
-        console.log(this.state.poems.split("\n"))
+        console.log(this.state.poems.split("\n"));
         return this.state.poems
             ? this.state.poems.split("\n").map((item, index) => (
                   <Text key={index} className="paragraph-line">
                       {item}
                   </Text>
-            ))
+              ))
             : [1, 2, 3, 4, 5, 6, 7, 8].map((item, index) => (
                   <Text key={index} className="paragraph-line">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -61,19 +61,23 @@ class PoemDisplay extends React.Component {
                     </Col>
 
                     <Col span={8} className="cover-of-poem">
-                        <Row className="poem-header">
-                            <Title style={{margin: "auto"}}>
-                                {this.state.title}
-                            </Title>
-                        </Row>
+                        <Row className="poem-outline">
+                            <Col span={24} >
+                                <Row className="poem-header">
+                                    <Title style={{ margin: "auto" }}>
+                                        {this.state.title}
+                                    </Title>
+                                </Row>
 
-                        <Row className="poem-paragraph">
-                            <Space
-                                direction="vertical"
-                                className="main-paragraph"
-                            >
-                                {this.renderRandomText()}
-                            </Space>
+                                <Row className="poem-paragraph">
+                                    <Space
+                                        direction="vertical"
+                                        className="main-paragraph"
+                                    >
+                                        {this.renderRandomText()}
+                                    </Space>
+                                </Row>
+                            </Col>
                         </Row>
                     </Col>
 
@@ -108,8 +112,8 @@ class PoemDisplay extends React.Component {
                                         );
 
                                     this.setState({
-                                        title: this.state.subTitle
-                                    })
+                                        title: this.state.subTitle,
+                                    });
                                 }}
                             >
                                 oke

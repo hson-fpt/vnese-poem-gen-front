@@ -4,9 +4,11 @@
     margin: 2vw;
 }
 
-.cover-video {
+.cover-of-video {
     border-right: 1px solid;
- 
+}
+
+.cover-video {
     padding: 50px;
 
     transform: none;
@@ -17,15 +19,17 @@
     transform: skewY(5deg);
 }
 
-.cover-of-poem {
-    border-right: solid 1px;
-
+.poen-outline {
     transform: none;
     transition: transform 1s;
 }
 
-.cover-of-poem:hover {
+.poem-outline:hover {
     transform: scale(1.1);
+}
+
+.cover-of-poem {
+    border-right: solid 1px;
 }
 
 .poem-header {
